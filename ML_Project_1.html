@@ -13076,7 +13076,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Run Time Terror</span>
@@ -13097,6 +13097,8 @@ div#notebook {
     <span class="n">linreg</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">linreg</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">companyName</span><span class="p">,</span> <span class="s2">&quot;Predicted stock value 1 week  from&quot;</span><span class="p">,</span> <span class="n">z</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">linreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">7</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">companyName</span><span class="p">,</span> <span class="s2">&quot;Predicted stock value 2 weeks from&quot;</span><span class="p">,</span> <span class="n">z</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">linreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">14</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span> 
     <span class="nb">print</span><span class="p">(</span><span class="n">companyName</span><span class="p">,</span> <span class="s2">&quot;Predicted stock value 3 weeks from&quot;</span><span class="p">,</span> <span class="n">z</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">linreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">21</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span> 
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">linreg</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
@@ -13111,7 +13113,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">getDate</span><span class="p">(</span><span class="n">filePath</span><span class="p">,</span> <span class="n">startDateIndex</span><span class="p">):</span>
@@ -13127,7 +13129,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/AAPL.csv&quot;</span><span class="p">,</span><span class="s2">&quot;Apple&quot;</span><span class="p">,</span> <span class="mi">1100</span><span class="p">)</span>
@@ -13148,7 +13150,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Apple Predicted stock value 3 weeks from 2020-02-10 : [330.6921098]
+<pre>Apple Predicted stock value 1 week  from 2020-02-10 : [318.81857332]
+Apple Predicted stock value 2 weeks from 2020-02-10 : [324.75534156]
+Apple Predicted stock value 3 weeks from 2020-02-10 : [330.6921098]
 </pre>
 </div>
 </div>
@@ -13185,7 +13189,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/AMD.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;AMD&quot;</span><span class="p">,</span> <span class="mi">1150</span><span class="p">)</span>
@@ -13206,7 +13210,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>AMD Predicted stock value 3 weeks from 2020-02-10 : [56.70232187]
+<pre>AMD Predicted stock value 1 week  from 2020-02-10 : [53.35333469]
+AMD Predicted stock value 2 weeks from 2020-02-10 : [55.02782828]
+AMD Predicted stock value 3 weeks from 2020-02-10 : [56.70232187]
 </pre>
 </div>
 </div>
@@ -13243,7 +13249,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/AMZN.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;Amazon&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -13264,7 +13270,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Amazon Predicted stock value 3 weeks from 2020-02-10 : [2062.47603014]
+<pre>Amazon Predicted stock value 1 week  from 2020-02-10 : [2042.79585505]
+Amazon Predicted stock value 2 weeks from 2020-02-10 : [2052.63594259]
+Amazon Predicted stock value 3 weeks from 2020-02-10 : [2062.47603014]
 </pre>
 </div>
 </div>
@@ -13301,7 +13309,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/DOW.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;Dow Jones Industrial Average&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -13322,7 +13330,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Dow Jones Industrial Average Predicted stock value 3 weeks from 2020-02-10 : [49.59613196]
+<pre>Dow Jones Industrial Average Predicted stock value 1 week  from 2020-02-10 : [49.67897569]
+Dow Jones Industrial Average Predicted stock value 2 weeks from 2020-02-10 : [49.63755383]
+Dow Jones Industrial Average Predicted stock value 3 weeks from 2020-02-10 : [49.59613196]
 </pre>
 </div>
 </div>
@@ -13359,7 +13369,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/IXIC.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;Nasdaq Composite&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -13380,7 +13390,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Nasdaq Composite Predicted stock value 3 weeks from 2020-02-10 : [8661.40448244]
+<pre>Nasdaq Composite Predicted stock value 1 week  from 2020-02-10 : [8612.7650987]
+Nasdaq Composite Predicted stock value 2 weeks from 2020-02-10 : [8637.08479057]
+Nasdaq Composite Predicted stock value 3 weeks from 2020-02-10 : [8661.40448244]
 </pre>
 </div>
 </div>
@@ -13417,7 +13429,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/NVDA.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;NVIDIA&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -13438,7 +13450,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>NVIDIA Predicted stock value 3 weeks from 2020-02-10 : [255.82286758]
+<pre>NVIDIA Predicted stock value 1 week  from 2020-02-10 : [253.14526103]
+NVIDIA Predicted stock value 2 weeks from 2020-02-10 : [254.4840643]
+NVIDIA Predicted stock value 3 weeks from 2020-02-10 : [255.82286758]
 </pre>
 </div>
 </div>
@@ -13475,7 +13489,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/S.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;Sprint&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -13496,7 +13510,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Sprint Predicted stock value 3 weeks from 2020-02-10 : [6.8717071]
+<pre>Sprint Predicted stock value 1 week  from 2020-02-10 : [6.85077202]
+Sprint Predicted stock value 2 weeks from 2020-02-10 : [6.86123956]
+Sprint Predicted stock value 3 weeks from 2020-02-10 : [6.8717071]
 </pre>
 </div>
 </div>
@@ -13533,7 +13549,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/TMUS.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;T-Mobile&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -13554,7 +13570,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>T-Mobile Predicted stock value 3 weeks from 2020-02-10 : [82.28217133]
+<pre>T-Mobile Predicted stock value 1 week from 2020-02-10 : [81.74765646]
+T-Mobile Predicted stock value 2 weeks from 2020-02-10 : [82.01491389]
+T-Mobile Predicted stock value 3 weeks from 2020-02-10 : [82.28217133]
 </pre>
 </div>
 </div>
@@ -13591,7 +13609,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/TSLA.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;Tesla&quot;</span><span class="p">,</span> <span class="mi">1210</span><span class="p">)</span>
@@ -13612,7 +13630,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Tesla Predicted stock value 3 weeks from 2020-02-10 : [906.84413219]
+<pre>Tesla Predicted stock value 1 week  from 2020-02-10 : [776.90487437]
+Tesla Predicted stock value 2 weeks from 2020-02-10 : [841.87450328]
+Tesla Predicted stock value 3 weeks from 2020-02-10 : [906.84413219]
 </pre>
 </div>
 </div>
@@ -13649,7 +13669,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">futureValue</span><span class="p">(</span><span class="s2">&quot;/home/caleb/CS483/csv_files/NFLX.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;Netflix&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
@@ -13670,7 +13690,9 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Netflix Predicted stock value 3 weeks from 2020-02-12 : [381.76050917]
+<pre>Netflix Predicted stock value 1 week  from 2020-02-12 : [378.01776888]
+Netflix Predicted stock value 2 weeks from 2020-02-12 : [379.88913903]
+Netflix Predicted stock value 3 weeks from 2020-02-12 : [381.76050917]
 </pre>
 </div>
 </div>
