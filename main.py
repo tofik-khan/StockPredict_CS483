@@ -17,7 +17,11 @@ def futureValue(filePath, companyName, startDateIndex):
     futureValue(string, string, integer) -> void
 
     The function takes the location of the .csv file (filePath)
-    and the name of the stock in that file.
+    and the name of the stock (companyName) in that file and the
+    start date (startDateIndex) to be considered.
+
+    The function then plots a graph and regression line for the stock
+    along with a predicted closing value of the stock after 3 weeks
     '''
     df = pd.read_csv(filePath)
     x = np.arange(startDateIndex,len(df))
