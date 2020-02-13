@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[16]:
-
-
 #Run Time Terror
 #CS483 Project 1
 get_ipython().run_line_magic('matplotlib', 'inline')
@@ -23,21 +20,25 @@ def futureValue(filePath, companyName, startDateIndex):
     The function then plots a graph and regression line for the stock
     along with a predicted closing value of the stock after 3 weeks
     '''
+
+    #read input from file
     df = pd.read_csv(filePath)
     x = np.arange(startDateIndex,len(df))
     y = df['Close'].values
     y = y[startDateIndex:]
+
+    # initializing a LinearRegression object
     linreg = LinearRegression()
     x = x.reshape(-1,1)
     linreg.fit(x,y)
+
+    #printing predicted values of the stock
     print(companyName, "stock in 3 weeks:" , linreg.predict(np.array([21 + len(df) - 1]).reshape(-1,1)))
     y_pred = linreg.predict(x)
     plt.plot(x,y,color='green')
     plt.plot(x,y_pred,color='red')
     plt.show()
 
-
-# In[30]:
 
 
 def getDate(filePath, startDateIndex):
